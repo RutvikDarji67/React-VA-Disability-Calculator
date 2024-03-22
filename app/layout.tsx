@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="grid grid-cols-2 gap-10">
+          <section>step progreess bar</section>
+          <section>{children}</section>
+        </main>
+      </body>
     </html>
   );
 }
